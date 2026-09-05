@@ -76,6 +76,10 @@ Ensure you have the following installed:
 
 Contributions are welcome! If you're part of the team, feel free to open a pull request.
 
+## 👥 Contributors
+
+*   [Enc0deX](https://github.com/Adbhut1234)
+
 ## 📜 License
 
 This project is licensed under the [MIT License](LICENSE.md).
