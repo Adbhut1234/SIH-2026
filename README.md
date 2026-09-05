@@ -78,7 +78,8 @@ Contributions are welcome! If you're part of the team, feel free to open a pull 
 
 ## 👥 Contributors
 
-*   [Enc0deX](https://github.com/Adbhut1234)
+*   [Adbhut](https://github.com/Adbhut1234)
+*   [Rishab](https://github.com/Rishabkr0)
 
 ## 📜 License
 
