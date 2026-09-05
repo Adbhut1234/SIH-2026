@@ -24,7 +24,7 @@ export async function POST(req: NextRequest) {
 
     // 2. Call Gemini 2.5 Flash API with Structured Outputs (JSON)
     const response = await ai.models.generateContent({
-        model: 'gemini-2.5-flash',
+        model: 'gemini-3.6-flash',
         contents: [
           {
             role: 'user',
