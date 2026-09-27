@@ -58,7 +58,7 @@ export default function Home() {
 <div className="flex items-center gap-4 text-on-surface-variant font-mono-data text-body-sm">
 <span className="flex items-center gap-1.5">
 <span className="material-symbols-outlined text-[16px] text-secondary">verified</span>
-              Underwriter Trust: 99.8%
+              Registrar Trust: 99.8%
             </span>
 <span className="hidden sm:inline text-surface-dim">|</span>
 <span className="hidden sm:inline">Enclave: HSM-Zone-Mumbai-04</span>
@@ -130,7 +130,7 @@ export default function Home() {
 <div>
 <div className="flex items-center justify-between mb-5">
 <div>
-<span className="font-headline-sm text-headline-sm text-on-surface">Automated Underwriter Extraction</span>
+<span className="font-headline-sm text-headline-sm text-on-surface">Automated Cadastral Extraction</span>
 <p className="font-body-sm text-body-sm text-on-surface-variant">Extracted in 3.42s with Analysis Engine v4.18</p>
 </div>
 <div className="inline-flex items-center gap-1.5 px-2.5 py-1 rounded bg-secondary-container text-on-secondary-container font-label-sm text-label-sm">
@@ -234,7 +234,7 @@ export default function Home() {
 {/* Institutional Logos / Sovereign Trust */}
 <div className="pt-8 flex flex-col md:flex-row items-center justify-between gap-6">
 <span className="font-label-sm text-label-sm text-on-surface-variant uppercase tracking-widest text-center md:text-left">
-          Trusted by State Registries &amp; Institutional Underwriters
+          Trusted by State Registries &amp; Revenue Departments
         </span>
 <div className="flex flex-wrap items-center justify-center gap-8 md:gap-12 opacity-80">
 <div className="flex items-center gap-2 font-headline-sm text-headline-sm text-on-surface font-bold">
@@ -325,7 +325,7 @@ export default function Home() {
 <span className="font-mono-data text-body-sm text-secondary bg-secondary-container/40 px-2 py-0.5 rounded font-semibold">04</span>
 <span className="material-symbols-outlined text-secondary text-[22px]">splitscreen</span>
 </div>
-<h3 className="font-headline-sm text-headline-sm text-on-surface mb-2 font-semibold">Underwriter Console</h3>
+<h3 className="font-headline-sm text-headline-sm text-on-surface mb-2 font-semibold">Officer Console</h3>
 <p className="font-body-sm text-body-sm text-on-surface-variant">
             Side-by-side verification console highlights extracted entities directly upon the scanned substrate. One-click resolution for anomalous title chains.
           </p>
@@ -431,7 +431,7 @@ export default function Home() {
 </div>
 </div>
 </section>
-{/* INTERACTIVE UNDERWRITER COMPARISON BENCHMARK */}
+{/* INTERACTIVE REGISTRAR COMPARISON BENCHMARK */}
 <section id="verification" className="max-w-7xl mx-auto px-6 lg:px-12 py-20">
 <div className="max-w-3xl mb-12">
 <span className="font-label-sm text-label-sm text-secondary uppercase tracking-widest font-semibold">Underwriting Performance</span>
@@ -486,7 +486,7 @@ export default function Home() {
 </div>
 </div>
 <div className="pt-6 mt-6 font-mono-data text-body-sm text-on-surface-variant">
-          Estimated Cost: $480 – $1,200 per parcel review
+          Estimated Cost: ₹15,000 – ₹50,000 per parcel review
         </div>
 </div>
 {/* TerraVerify Autonomous Approach Card */}
@@ -564,7 +564,7 @@ export default function Home() {
 </div>
 </div>
 </section>
-</div></main><footer className="w-full bg-surface-container-low shadow-[0_-1px_0_rgba(0,0,0,0.02)]"><div className="max-w-7xl mx-auto px-6 lg:px-12 pt-16 pb-12"><div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-10 pb-16"><div className="lg:col-span-2 flex flex-col gap-4"><div className="flex items-center gap-3"><img alt="TerraVerify Enterprise" className="h-7 w-auto object-contain" src="/logo.svg"/><span className="font-headline-sm text-headline-sm text-on-surface">TerraVerify Enterprise</span></div><p className="font-body-md text-body-md text-on-surface-variant max-w-sm">Deterministic cadastral intelligence, title chain reconciliation, and metes-and-bounds deed extraction for institutional underwriters and sovereign land offices.</p><div className="flex items-center gap-2 pt-2"><span className="inline-flex items-center gap-1.5 px-2.5 py-1 rounded-full bg-secondary-container text-on-secondary-container font-label-sm text-label-sm"><span className="w-1.5 h-1.5 rounded-full bg-secondary"></span>Active Ledger Enclave</span><span className="font-mono-data text-body-sm text-on-surface-variant">v4.18-cadastral</span></div></div><div className="flex flex-col gap-3"><span className="font-headline-sm text-headline-sm text-on-surface tracking-tight">Platform</span><a className="font-body-md text-body-md text-on-surface-variant hover:text-on-surface transition-colors" data-path="platform" href="#platform">The 5-Step Pipeline</a><a className="font-body-md text-body-md text-on-surface-variant hover:text-on-surface transition-colors" data-path="cadastral-ai" href="#cadastral-ai">Enterprise Pillars</a><a className="font-body-md text-body-md text-on-surface-variant hover:text-on-surface transition-colors" data-path="verification-ledger" href="#verification">Comparison Benchmark</a><a className="font-body-md text-body-md text-on-surface-variant hover:text-on-surface transition-colors" data-path="solutions" href="#workbench-preview">Interactive Workbench</a><Link className="font-body-md text-body-md text-on-surface-variant hover:text-on-surface transition-colors" href="/dashboard" >Launch Portal</Link></div><div className="flex flex-col gap-3"><span className="font-headline-sm text-headline-sm text-on-surface tracking-tight">Security &amp; Compliance</span><div className="flex items-center gap-2 text-on-surface font-label-md text-label-md"><span className="material-symbols-outlined text-[18px] text-secondary">verified_user</span>ISO-27001 Certified</div><div className="flex items-center gap-2 text-on-surface font-label-md text-label-md"><span className="material-symbols-outlined text-[18px] text-secondary">shield</span>SOC-2 Type II Attested</div><div className="flex items-center gap-2 text-on-surface font-label-md text-label-md"><span className="material-symbols-outlined text-[18px] text-secondary">key</span>Dedicated HSM Enclave</div><div className="flex items-center gap-2 text-on-surface font-label-md text-label-md"><span className="material-symbols-outlined text-[18px] text-secondary">account_balance</span>FedRAMP In-Process</div></div><div className="flex flex-col gap-3"><span className="font-headline-sm text-headline-sm text-on-surface tracking-tight">Support</span><Link className="font-body-md text-body-md text-on-surface-variant hover:text-on-surface transition-colors" href="/contact">Contact Us</Link><Link className="font-body-md text-body-md text-on-surface-variant hover:text-on-surface transition-colors" href="/contact">Book Sandbox Demo</Link><a className="font-body-md text-body-md text-on-surface-variant hover:text-on-surface transition-colors flex items-center gap-1.5" href="https://github.com/Adbhut1234/SIH-2026" target="_blank" rel="noopener noreferrer"><span className="material-symbols-outlined text-[16px]">code</span>GitHub Repository</a></div></div><div className="pt-8 border-t border-surface-container-highest/60 flex flex-col md:flex-row items-center justify-between gap-4"><p className="font-body-sm text-body-sm text-on-surface-variant">© 2026 TerraVerify. Built with ❤️ for Smart India Hackathon (SIH) 2026.</p><div className="flex items-center gap-6 font-mono-data text-body-sm text-on-surface-variant"><span>Open Source Innovation</span><span>Cadastral Intelligence Systems</span></div></div></div></footer>
+</div></main><footer className="w-full bg-surface-container-low shadow-[0_-1px_0_rgba(0,0,0,0.02)]"><div className="max-w-7xl mx-auto px-6 lg:px-12 pt-16 pb-12"><div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-10 pb-16"><div className="lg:col-span-2 flex flex-col gap-4"><div className="flex items-center gap-3"><img alt="TerraVerify Enterprise" className="h-7 w-auto object-contain" src="/logo.svg"/><span className="font-headline-sm text-headline-sm text-on-surface">TerraVerify Enterprise</span></div><p className="font-body-md text-body-md text-on-surface-variant max-w-sm">Deterministic cadastral intelligence, title chain reconciliation, and metes-and-bounds deed extraction for revenue departments and sovereign land offices.</p><div className="flex items-center gap-2 pt-2"><span className="inline-flex items-center gap-1.5 px-2.5 py-1 rounded-full bg-secondary-container text-on-secondary-container font-label-sm text-label-sm"><span className="w-1.5 h-1.5 rounded-full bg-secondary"></span>Active Ledger Enclave</span><span className="font-mono-data text-body-sm text-on-surface-variant">v4.18-cadastral</span></div></div><div className="flex flex-col gap-3"><span className="font-headline-sm text-headline-sm text-on-surface tracking-tight">Platform</span><a className="font-body-md text-body-md text-on-surface-variant hover:text-on-surface transition-colors" data-path="platform" href="#platform">The 5-Step Pipeline</a><a className="font-body-md text-body-md text-on-surface-variant hover:text-on-surface transition-colors" data-path="cadastral-ai" href="#cadastral-ai">Enterprise Pillars</a><a className="font-body-md text-body-md text-on-surface-variant hover:text-on-surface transition-colors" data-path="verification-ledger" href="#verification">Comparison Benchmark</a><a className="font-body-md text-body-md text-on-surface-variant hover:text-on-surface transition-colors" data-path="solutions" href="#workbench-preview">Interactive Workbench</a><Link className="font-body-md text-body-md text-on-surface-variant hover:text-on-surface transition-colors" href="/dashboard" >Officer Console</Link></div><div className="flex flex-col gap-3"><span className="font-headline-sm text-headline-sm text-on-surface tracking-tight">Security &amp; Compliance</span><div className="flex items-center gap-2 text-on-surface font-label-md text-label-md"><span className="material-symbols-outlined text-[18px] text-secondary">verified_user</span>ISO-27001 Certified</div><div className="flex items-center gap-2 text-on-surface font-label-md text-label-md"><span className="material-symbols-outlined text-[18px] text-secondary">shield</span>SOC-2 Type II Attested</div><div className="flex items-center gap-2 text-on-surface font-label-md text-label-md"><span className="material-symbols-outlined text-[18px] text-secondary">key</span>Dedicated HSM Enclave</div><div className="flex items-center gap-2 text-on-surface font-label-md text-label-md"><span className="material-symbols-outlined text-[18px] text-secondary">account_balance</span>FedRAMP In-Process</div></div><div className="flex flex-col gap-3"><span className="font-headline-sm text-headline-sm text-on-surface tracking-tight">Support</span><Link className="font-body-md text-body-md text-on-surface-variant hover:text-on-surface transition-colors" href="/contact">Contact Us</Link><Link className="font-body-md text-body-md text-on-surface-variant hover:text-on-surface transition-colors" href="/contact">Book Sandbox Demo</Link><a className="font-body-md text-body-md text-on-surface-variant hover:text-on-surface transition-colors flex items-center gap-1.5" href="https://github.com/Adbhut1234/SIH-2026" target="_blank" rel="noopener noreferrer"><span className="material-symbols-outlined text-[16px]">code</span>GitHub Repository</a></div></div><div className="pt-8 border-t border-surface-container-highest/60 flex flex-col md:flex-row items-center justify-between gap-4"><p className="font-body-sm text-body-sm text-on-surface-variant">© 2026 TerraVerify. Built with ❤️ for Smart India Hackathon (SIH) 2026.</p><div className="flex items-center gap-6 font-mono-data text-body-sm text-on-surface-variant"><span>Open Source Innovation</span><span>Cadastral Intelligence Systems</span></div></div></div></footer>
     </div>
   );
 }

@@ -190,7 +190,7 @@ export default function ReviewPage() {
                   <h2 className="font-headline-md text-headline-md text-on-surface">Needs attention</h2>
                   <span className="px-space-sm py-0.5 rounded-full bg-error-container text-on-error-container font-label-sm text-label-sm font-semibold">1 Flagged</span>
                 </div>
-                <span className="font-body-sm text-body-sm text-on-surface-variant">Requires human underwriter sign-off</span>
+                <span className="font-body-sm text-body-sm text-on-surface-variant">Requires Revenue Officer sign-off</span>
               </div>
               
               {/* Card 1: Survey Number */}
