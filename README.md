@@ -4,6 +4,14 @@
 
 This platform aims to modernize cadastral systems by providing an automated pipeline to ingest, extract, validate, and securely store land records, creating a deterministic and reliable ledger of property ownership.
 
+## 🎥 Video Representation
+[Watch the Demo on YouTube](https://youtu.be/WxM9oEbWDr8)
+
+## 🔐 Demo Credentials
+To test the application, you can use the following credentials:
+* **Email:** sample@gmail.com
+* **Password:** 123
+
 ## 🚀 Features
 
 *   **Intelligent Document Processing:** Upload scanned land records (PDF, TIFF, GeoPDF, GeoTIFF).
