@@ -1,4 +1,5 @@
 import { createClient } from '@supabase/supabase-js';
+import DashboardCharts from '@/components/DashboardCharts';
 
 export const dynamic = 'force-dynamic';
 
@@ -70,6 +71,11 @@ export default async function Home() {
               <div className="h-full w-1/4 bg-primary-container opacity-40"></div>
             </div>
           </div>
+        </section>
+
+        {/* Dashboard Analytics Charts */}
+        <section className="w-full mb-4">
+          <DashboardCharts />
         </section>
 
         <section className="w-full space-y-space-lg">
