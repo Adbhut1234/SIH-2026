@@ -1,5 +1,5 @@
 <p align="center">
-  <img src="./public/logo.svg" alt="Terra-Verify Logo" width="150" />
+  <img src="./public/logo-readme.svg" alt="Terra-Verify Logo" width="150" />
 </p>
 
 # Terra-Verify 🌍
