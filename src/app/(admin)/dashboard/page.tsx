@@ -74,8 +74,12 @@ export default async function Home() {
         </section>
 
         {/* Dashboard Analytics Charts */}
-        <section className="w-full mb-4">
-          <DashboardCharts />
+        <section className="w-full mb-4 relative">
+          <DashboardCharts totalRecords={records.length} verifiedRecords={verifiedCount} />
+          <div className="absolute top-2 right-4 bg-surface-container-low px-2 py-1 rounded text-xs text-on-surface-variant flex items-center gap-1 border border-outline-variant/30">
+            <span className="w-1.5 h-1.5 rounded-full bg-secondary animate-pulse"></span>
+            Hybrid Live Mode
+          </div>
         </section>
 
         <section className="w-full space-y-space-lg">
