@@ -73,13 +73,16 @@ Ministry of Rural Development (DoLR)
 <div className="grid grid-cols-1 lg:grid-cols-12 min-h-[460px]">
 {/* Left: Scanned Historical Deed Viewport & Cadastral Vector */}
 <div className="lg:col-span-6 bg-surface-container-low/40 p-6 flex flex-col justify-between relative overflow-hidden">
-<div className="flex items-center justify-between mb-4">
+<div className="flex flex-col sm:flex-row sm:items-center justify-between gap-2 mb-4">
 <div className="flex items-center gap-2">
 <span className="material-symbols-outlined text-[18px] text-on-surface-variant">description</span>
 <span className="font-headline-sm text-headline-sm text-on-surface">Source Deed &amp; Traverse Geometry</span>
 </div>
+<div className="flex items-center gap-2">
+<span className="bg-secondary-container/30 text-secondary border border-secondary-container px-2 py-0.5 rounded text-xs font-semibold tracking-wide uppercase">Sample Prototype Preview</span>
 <div className="flex items-center gap-1 bg-surface-container-lowest px-2 py-1 rounded shadow-sm font-mono-data text-body-sm text-on-surface-variant">
 <span>Zoom: 140%</span>
+</div>
 </div>
 </div>
 {/* Visual Graphic: Deed with Metes Polygon Overlay */}
@@ -508,15 +511,15 @@ Ministry of Rural Development (DoLR)
 <div className="p-4 bg-secondary-container/20 rounded-lg flex items-start gap-3">
 <span className="material-symbols-outlined text-secondary text-[20px] mt-0.5">bolt</span>
 <div>
-<span className="font-headline-sm text-headline-sm text-on-surface block">3.8 Seconds Per Deed</span>
-<span className="font-body-sm text-body-sm text-on-surface-variant">Autonomous multi-lingual OCR, spatial geometry parsing, and entity resolution.</span>
+<span className="font-headline-sm text-headline-sm text-on-surface flex items-center gap-2">3.8 Seconds Per Deed <span className="text-[10px] bg-surface-container-high px-1.5 py-0.5 rounded text-on-surface-variant uppercase tracking-wider font-semibold">Simulated Benchmark</span></span>
+<span className="font-body-sm text-body-sm text-on-surface-variant mt-1 block">Autonomous multi-lingual OCR, spatial geometry parsing, and entity resolution.</span>
 </div>
 </div>
 <div className="p-4 bg-secondary-container/20 rounded-lg flex items-start gap-3">
 <span className="material-symbols-outlined text-secondary text-[20px] mt-0.5">check_circle</span>
 <div>
-<span className="font-headline-sm text-headline-sm text-on-surface block">99.8% Mathematical Accuracy</span>
-<span className="font-body-sm text-body-sm text-on-surface-variant">Deterministic verification cross-checked against RoR master index registers.</span>
+<span className="font-headline-sm text-headline-sm text-on-surface flex items-center gap-2">99.8% Mathematical Accuracy <span className="text-[10px] bg-surface-container-high px-1.5 py-0.5 rounded text-on-surface-variant uppercase tracking-wider font-semibold">Simulated Benchmark</span></span>
+<span className="font-body-sm text-body-sm text-on-surface-variant mt-1 block">Deterministic verification cross-checked against RoR master index registers.</span>
 </div>
 </div>
 <div className="p-4 bg-secondary-container/20 rounded-lg flex items-start gap-3">
@@ -535,8 +538,9 @@ Ministry of Rural Development (DoLR)
 </div>
 </div>
 </div>
-<div className="pt-6 mt-6 font-mono-data text-body-sm text-secondary font-semibold">
-          Estimated Cost: Reduced by 86% with instant SLA
+<div className="pt-6 mt-6 font-mono-data text-body-sm text-secondary font-semibold flex flex-col sm:flex-row sm:items-center justify-between gap-2">
+          <span>Estimated Cost: Reduced by 86% with instant SLA</span>
+          <span className="text-[10px] bg-secondary-container/40 px-1.5 py-0.5 rounded text-secondary uppercase tracking-wider self-start sm:self-auto">Simulated Target Benchmark</span>
         </div>
 </div>
 </div>
