@@ -1,3 +1,7 @@
+<p align="center">
+  <img src="./public/logo.svg" alt="Terra-Verify Logo" width="150" />
+</p>
+
 # Terra-Verify 🌍
 
 **Terra-Verify** is an Intelligent Land Record Digitization and Validation System built for the **Smart India Hackathon (SIH) 2026**. It addresses the problem statement **SIH26018** provided by the **Ministry of Rural Development**.
