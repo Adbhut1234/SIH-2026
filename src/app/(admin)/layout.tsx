@@ -18,7 +18,7 @@ export default function AdminLayout({
           </div>
         </header>
         
-        <main className="w-full pt-16 pb-20 lg:pb-0 bg-surface min-h-screen">
+        <main className="w-full pt-16 bg-surface min-h-screen">
           {children}
         </main>
       </div>
