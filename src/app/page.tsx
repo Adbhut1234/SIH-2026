@@ -11,19 +11,24 @@ export default function Home() {
 {/* HERO SECTION */}
 <section className="max-w-7xl mx-auto px-6 lg:px-12 pt-8 pb-16 lg:pb-24 relative">
 <div className="flex flex-col items-center text-center max-w-4xl mx-auto mb-12">
-{/* Live Status Pill */}
-<div className="inline-flex items-center gap-2.5 px-3.5 py-1.5 rounded-full bg-surface-container-low shadow-sm mb-6">
+<div className="inline-flex flex-col sm:flex-row items-center gap-3 mb-6">
+<div className="inline-flex items-center gap-2.5 px-3.5 py-1.5 rounded-full bg-surface-container-low shadow-sm border border-outline-variant/30">
 <span className="relative flex h-2.5 w-2.5">
 <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-secondary opacity-75"></span>
 <span className="relative inline-flex rounded-full h-2.5 w-2.5 bg-secondary"></span>
 </span>
-<span className="font-label-sm text-label-sm text-on-surface uppercase tracking-wider">Next-Gen Land Record Analysis &amp; State Registry</span>
-<span className="font-mono-data text-body-sm text-secondary bg-secondary-container/40 px-2 py-0.5 rounded-full">Secure System Active</span>
+<span className="font-label-sm text-label-sm text-on-surface uppercase tracking-widest font-bold">SIH 2026</span>
+<span className="font-mono-data text-body-sm text-secondary bg-secondary-container/40 px-2.5 py-0.5 rounded-full font-semibold">PSID: SIH26018</span>
+</div>
+<div className="inline-flex items-center gap-2 px-3 py-1.5 rounded-full bg-surface-container-lowest shadow-sm border border-outline-variant/30 text-on-surface-variant font-label-sm text-label-sm">
+<span className="material-symbols-outlined text-[16px] text-primary">account_balance</span>
+Ministry of Rural Development (DoLR)
+</div>
 </div>
 {/* Headline */}
 <h1 className="font-display-lg text-display-lg-mobile md:text-display-lg text-on-surface tracking-tight mb-6 font-bold">
-          Autonomous Land Deed Extraction <br className="hidden sm:inline"/>
-<span className="text-secondary">&amp; Spatial Verification</span>
+          Intelligent Land Record Digitization <br className="hidden sm:inline"/>
+<span className="text-secondary">&amp; Validation System</span>
 </h1>
 {/* Subtitle */}
 <p className="font-body-lg text-body-lg text-on-surface-variant max-w-3xl leading-relaxed mb-8">
