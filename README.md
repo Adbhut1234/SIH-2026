@@ -92,7 +92,6 @@ Contributions are welcome! If you're part of the team, feel free to open a pull 
 
 *   [Adbhut](https://github.com/Adbhut1234)
 *   [Rishab](https://github.com/Rishabkr0)
-*   [Ishan](https://github.com/srivastavishan82-creator)
 
 ## 📜 License
 
