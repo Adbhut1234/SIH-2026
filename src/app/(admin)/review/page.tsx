@@ -113,7 +113,7 @@ export default function ReviewPage() {
             <span className="bg-surface-container-high px-space-xs py-0.5 rounded text-on-surface font-medium">Review Stage</span>
           </div>
           {/* Linear Process Indicator */}
-          <div className="flex items-center gap-space-sm font-label-md text-label-md">
+          <div className="flex items-center gap-space-sm font-label-md text-label-md overflow-x-auto pb-2 md:pb-0 w-full md:w-auto">
             <div onClick={() => router.push('/upload')} className="flex items-center gap-space-xs text-secondary font-semibold cursor-pointer">
               <span className="w-5 h-5 rounded-full bg-secondary-container text-on-secondary-container flex items-center justify-center text-[12px] font-bold">✓</span>
               <span>Upload</span>
@@ -147,7 +147,7 @@ export default function ReviewPage() {
               Automated extraction completed. Verify and edit entries against the source document.
             </p>
           </div>
-          <div className="flex items-center gap-space-sm shrink-0">
+          <div className="flex flex-col sm:flex-row sm:flex-wrap items-stretch sm:items-center gap-space-sm shrink-0 w-full md:w-auto">
             <button 
               onClick={() => isEditing ? handleSaveEdits() : setIsEditing(true)} 
               className={`px-space-md py-space-sm rounded-lg font-label-md text-label-md shadow-sm transition-all flex items-center gap-space-xs ${
@@ -482,8 +482,8 @@ export default function ReviewPage() {
               <span className="font-label-md text-label-md font-semibold text-on-surface">Pending endorsement</span>
             </div>
           </div>
-          <div className="flex items-center gap-space-sm w-full sm:w-auto justify-end">
-            <button onClick={handleCancel} className="px-space-md py-space-sm rounded-lg text-error hover:bg-error-container hover:text-on-error-container font-label-md text-label-md transition-colors font-semibold" type="button">
+          <div className="flex flex-wrap sm:flex-nowrap items-center gap-space-sm w-full sm:w-auto justify-start sm:justify-end">
+            <button onClick={handleCancel} className="flex-1 sm:flex-none px-space-md py-space-sm rounded-lg text-error hover:bg-error-container hover:text-on-error-container font-label-md text-label-md transition-colors font-semibold" type="button">
               Discard
             </button>
             <button onClick={handleSaveEdits} className="px-space-md py-space-sm rounded-lg bg-surface-container-high text-on-surface font-label-md text-label-md hover:bg-surface-container-highest transition-colors" type="button">

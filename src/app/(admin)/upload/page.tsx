@@ -126,11 +126,11 @@ export default function UploadPage() {
                 <p className="font-body-md text-body-md text-on-surface-variant max-w-md mb-space-xl">
                   {(file.size / 1024 / 1024).toFixed(1)} MB
                 </p>
-                <div className="flex gap-space-md">
-                  <button className="flex items-center gap-space-sm px-space-lg py-space-sm rounded-lg border border-outline-variant text-on-surface font-label-md text-label-md font-semibold hover:bg-surface-container-low" onClick={(e) => { e.stopPropagation(); setFile(null); }}>
+                <div className="flex flex-col sm:flex-row gap-space-md w-full max-w-md mx-auto">
+                  <button className="flex justify-center items-center gap-space-sm px-space-lg py-space-sm rounded-lg border border-outline-variant text-on-surface font-label-md text-label-md font-semibold hover:bg-surface-container-low" onClick={(e) => { e.stopPropagation(); setFile(null); }}>
                     Remove
                   </button>
-                  <button className="flex items-center gap-space-sm px-space-xl py-space-sm rounded-lg bg-secondary text-on-secondary font-label-md text-label-md font-semibold shadow-md hover:opacity-95" onClick={(e) => { e.stopPropagation(); handleUpload(); }} disabled={isUploading}>
+                  <button className="flex justify-center items-center gap-space-sm px-space-xl py-space-sm rounded-lg bg-secondary text-on-secondary font-label-md text-label-md font-semibold shadow-md hover:opacity-95" onClick={(e) => { e.stopPropagation(); handleUpload(); }} disabled={isUploading}>
                     {isUploading ? <span className="material-symbols-outlined animate-spin">sync</span> : <span className="material-symbols-outlined">auto_awesome</span>}
                     <span>{isUploading ? 'Uploading...' : 'Extract Data'}</span>
                   </button>

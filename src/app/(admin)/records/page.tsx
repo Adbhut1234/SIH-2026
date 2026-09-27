@@ -66,7 +66,7 @@ export default async function VerifiedRecordsPage() {
                   
                   <div className="grid grid-cols-2 gap-space-md pt-space-xs">
                     <div className="flex flex-col space-y-1 p-space-sm rounded-lg bg-surface-container-low">
-                      <span className="font-label-sm text-label-sm text-outline">Owner (Grantor / Grantee)</span>
+                      <span className="font-label-sm text-label-sm text-outline">Owner (Seller ➔ Buyer)</span>
                       <span className="font-body-sm text-body-sm text-on-surface font-semibold line-clamp-2">
                         {record.grantorName || record.grantor_name} ➔ {record.granteeName || record.grantee_name}
                       </span>
@@ -92,7 +92,7 @@ export default async function VerifiedRecordsPage() {
                   </div>
                 </div>
 
-                <div className="mt-space-lg pt-space-md border-t border-surface-container flex items-center justify-between">
+                <div className="mt-space-lg pt-space-md border-t border-surface-container flex flex-col sm:flex-row items-start sm:items-center justify-between gap-space-md">
                   <div className="flex flex-col">
                     <span className="font-label-sm text-label-sm text-outline">Ledger Timestamp</span>
                     <span className="font-mono-data text-mono-data text-on-surface-variant text-sm">
@@ -101,7 +101,7 @@ export default async function VerifiedRecordsPage() {
                   </div>
                   
                   {record.document_url ? (
-                    <div className="flex items-center gap-space-sm">
+                    <div className="flex flex-wrap items-center gap-space-sm w-full sm:w-auto">
                       <DeleteRecordButton id={record.id} />
                       <a 
                         href={record.document_url}
@@ -114,7 +114,7 @@ export default async function VerifiedRecordsPage() {
                       </a>
                     </div>
                   ) : (
-                    <div className="flex items-center gap-space-sm">
+                    <div className="flex flex-wrap items-center gap-space-sm w-full sm:w-auto">
                       <DeleteRecordButton id={record.id} />
                       <button disabled className="px-space-md py-space-sm rounded-lg bg-surface-container text-outline font-label-md font-semibold flex items-center gap-space-xs cursor-not-allowed">
                         <span className="material-symbols-outlined text-[18px]">visibility_off</span>
