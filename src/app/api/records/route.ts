@@ -1,5 +1,6 @@
 import { NextRequest, NextResponse } from 'next/server';
 import { createClient } from '@supabase/supabase-js';
+import { revalidatePath } from 'next/cache';
 
 // Initialize Supabase admin client
 const supabaseUrl = process.env.NEXT_PUBLIC_SUPABASE_URL || '';
@@ -57,6 +58,38 @@ export async function DELETE(req: NextRequest) {
       return NextResponse.json({ error: 'Missing id parameter' }, { status: 400 });
     }
 
+    // 1. Fetch record to get document URL
+    const { data: record, error: fetchError } = await supabase
+      .from('land_records')
+      .select('document_url')
+      .eq('id', id)
+      .single();
+
+    if (fetchError) {
+      console.error("Supabase fetch error:", fetchError);
+    }
+
+    // 2. Delete file from storage
+    if (record && record.document_url) {
+      try {
+        const url = new URL(record.document_url);
+        const pathParts = url.pathname.split('/land_records/');
+        if (pathParts.length > 1) {
+          const storagePath = pathParts[1]; // e.g., 'scans/filename.pdf'
+          const { error: storageError } = await supabase.storage
+            .from('land_records')
+            .remove([storagePath]);
+            
+          if (storageError) {
+            console.error("Storage delete error:", storageError);
+          }
+        }
+      } catch (e) {
+        console.error("Error deleting from storage:", e);
+      }
+    }
+
+    // 3. Delete database record
     const { error } = await supabase
       .from('land_records')
       .delete()
@@ -66,6 +99,10 @@ export async function DELETE(req: NextRequest) {
       console.error("Supabase delete error:", error);
       return NextResponse.json({ error: error.message }, { status: 500 });
     }
+
+    // 4. Invalidate the cache for the records page
+    revalidatePath('/records');
+    revalidatePath('/dashboard');
 
     return NextResponse.json({ success: true });
   } catch (error: unknown) {
