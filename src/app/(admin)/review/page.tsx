@@ -295,14 +295,14 @@ export default function ReviewPage() {
                     {/* Grantor / Grantee Owners */}
                     <div className="py-space-md flex flex-col sm:flex-row sm:items-center justify-between gap-space-xs">
                       <div className="flex flex-col w-full">
-                        <span className="font-label-sm text-label-sm text-outline">Owner Name (Grantor / Grantee)</span>
+                        <span className="font-label-sm text-label-sm text-outline">Owner Name (Seller ➔ Buyer)</span>
                         {isEditing ? (
                           <div className="flex items-center gap-2 mt-1">
                             <input 
                               type="text" 
                               value={data.grantorName || ''} 
                               onChange={(e) => handleInputChange('grantorName', e.target.value)}
-                              placeholder="Grantor"
+                              placeholder="Seller (Vikreta)"
                               className="font-headline-sm text-body-lg text-on-surface font-semibold w-1/2 bg-surface px-3 py-1 rounded border border-outline focus:outline-none"
                             />
                             <span>➔</span>
@@ -310,7 +310,7 @@ export default function ReviewPage() {
                               type="text" 
                               value={data.granteeName || ''} 
                               onChange={(e) => handleInputChange('granteeName', e.target.value)}
-                              placeholder="Grantee"
+                              placeholder="Buyer (Kreta)"
                               className="font-headline-sm text-body-lg text-on-surface font-semibold w-1/2 bg-surface px-3 py-1 rounded border border-outline focus:outline-none"
                             />
                           </div>
