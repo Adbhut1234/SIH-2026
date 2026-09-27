@@ -129,7 +129,7 @@ export default function DashboardCharts({ totalRecords = 0, verifiedRecords = 0 
               <RechartsTooltip 
                 contentStyle={{ backgroundColor: '#1e293b', border: 'none', borderRadius: '8px', color: '#fff' }}
                 itemStyle={{ color: '#fff' }}
-                formatter={(value: number) => [value.toLocaleString(), 'Records']}
+                formatter={(value: any) => [Number(value).toLocaleString(), 'Records']}
               />
               <Legend verticalAlign="bottom" height={36} iconType="circle" wrapperStyle={{ fontSize: '12px' }}/>
             </PieChart>
