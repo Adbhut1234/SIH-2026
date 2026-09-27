@@ -27,7 +27,7 @@ export default function Home() {
 </h1>
 {/* Subtitle */}
 <p className="font-body-lg text-body-lg text-on-surface-variant max-w-3xl leading-relaxed mb-8">
-          Turn multi-century scanned deeds, khasra extracts, and surveyor plats into immutable, GIS-anchored cadastral truth in seconds with zero human data leakage.
+          Turn vernacular legacy records (Hindi, Marathi, etc.), khasra extracts, and surveyor plats into immutable, GIS-anchored cadastral truth compliant with DILRMP standards.
         </p>
 {/* CTA Buttons Group */}
 <div className="flex flex-wrap items-center justify-center gap-4">
@@ -143,8 +143,8 @@ export default function Home() {
 {/* Entity 1: PIN & Parcel */}
 <div className="p-3 bg-surface rounded-lg shadow-sm flex items-center justify-between">
 <div className="flex flex-col">
-<span className="font-label-sm text-label-sm text-on-surface-variant uppercase tracking-wider">Parcel ID (PIN / Survey)</span>
-<span className="font-mono-data text-headline-sm text-on-surface font-semibold">MH-PUN-HAV-142-03</span>
+<span className="font-label-sm text-label-sm text-on-surface-variant uppercase tracking-wider">Bhu-Aadhaar (ULPIN)</span>
+<span className="font-mono-data text-headline-sm text-on-surface font-semibold">27341234567890</span>
 </div>
 <div className="text-right">
 <span className="font-label-sm text-label-sm text-secondary bg-secondary-container/40 px-2 py-0.5 rounded">100% Match</span>
